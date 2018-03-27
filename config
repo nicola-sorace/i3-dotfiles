@@ -199,8 +199,8 @@ bindsym XF86AudioPause exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc previous
 
-bindsym XF86MonBrightnessUp exec light -A 10 && notify-send -u low \"   $('light')% \"
-bindsym XF86MonBrightnessDown exec light -U 10 && notify-send -u low \"   $('light')% \"
+bindsym XF86MonBrightnessUp exec light -A 5 && notify-send -r 274448 -u low \"   $('light')% \"
+bindsym XF86MonBrightnessDown exec light -U 5 && notify-send -r 274448 -u low \"   $('light')% \"
 
 #bindsym $mod+c exec chromium
 #bindsym $mod+i exec chromium --incognito
@@ -232,5 +232,5 @@ exec --no-startup-id compton --config "/home/nicola/.config/compton.conf"
 exec --no-startup-id dunst -conf "/home/nicola/.config/dunstrc"
 exec --no-startup-id nm-applet
 #exec --no-startup-id conky main -c "/home/nicola/.config/i3/conky/l"
-exec_always --no-startup-id killall conky; conky main -c "/home/nicola/.config/i3/conky/r"
+#exec_always --no-startup-id killall conky; conky main -c "/home/nicola/.config/i3/conky/r"
 exec --no-startup-id mopidy

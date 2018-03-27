@@ -9,7 +9,8 @@
 
 [colors]
 background = #f516263B
-background-alt = #e016263B
+;background-alt = #e016263B
+background-alt = #f5112136
 ;background-alt = #f516263B
 ;foreground = #f3f4f5
 foreground = #c2e2e2
@@ -59,9 +60,9 @@ font-1 = FontAwesome:pixelsize=14;3
 font-2 = Everson Mono:pixelsize=24;
 
 
-modules-left = bspwm i3 xwindow
+modules-left = i3 xwindow
 modules-center =
-modules-right = battWarn mpd myVolume  wlan eth  memory cpu myLoad temperature  battery  day date time
+modules-right = battWarn wallpapers mpd myVolume  wlan eth  memory cpu myLoad temperature  battery  day date time
 ;systemRoot systemHome s
 
 tray-position = right
@@ -262,6 +263,12 @@ type = custom/script
 interval = 300
 exec = /home/nicola/.config/i3/battwarn.sh
 
+[module/wallpapers]
+#Alternates wallpapers
+type = custom/script
+interval = 300
+exec = /home/nicola/.config/i3/wallpapers.sh
+
 [module/myVolume]
 inherit = module/theme
 custom-color = ${module/theme.COLOR5}
@@ -283,8 +290,9 @@ format-offset = ${self.custom-offset}
 interval = 1
 type = custom/script
 exec = /usr/lib/i3blocks/load_average
-click-left = urxvt -name float -e htop &
+click-right = urxvt -name float -e htop &
 ;format-underline = #d33636
+click-left = /home/nicola/.config/i3/conky.sh status
 
 [module/systemRoot]
 inherit = module/theme
