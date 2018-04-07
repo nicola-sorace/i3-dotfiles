@@ -279,7 +279,7 @@ exec = /usr/lib/i3blocks/volume
 scroll-up = pactl set-sink-volume 1 +1%
 scroll-down = pactl set-sink-volume 1 -1%
 click-left = pavucontrol &
-click-right = urxvt -name float -e ncmpcpp &
+click-right = termite --name "i3_float" -e ncmpcpp &
 format-prefix = ""
 
 [module/myLoad]
@@ -290,7 +290,7 @@ format-offset = ${self.custom-offset}
 interval = 1
 type = custom/script
 exec = /usr/lib/i3blocks/load_average
-click-right = urxvt -name float -e htop &
+click-right = termite --name "i3_float" -e htop &
 ;format-underline = #d33636
 click-left = /home/nicola/.config/i3/conky.sh status
 

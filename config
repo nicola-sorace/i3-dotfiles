@@ -169,12 +169,14 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bindsym $mod+Shift+s sticky toggle
 
 # default floating
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Skype"] floating enable
-for_window [class="URxvt" instance="float"] floating enable
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^Skype$"] floating enable
+for_window [title="^Blender User Preferences$"] floating enable
+
+for_window [instance="^i3_float$"] floating enable
 
 # default workspaces
-assign [class="spotify"] $workspace9
+
 
 # workspace default monitors
 #workspace $workspace0 output DVI-I-2
@@ -228,8 +230,8 @@ bindsym $mod+XF86MonBrightnessUp exec conky main -c \\"/home/nicola/.config/i3/c
 # startup
 exec_always --no-startup-id feh --bg-fill "/home/nicola/Documents/wallpapers/penguin.png"
 exec_always --no-startup-id killall polybar; polybar main -c "/home/nicola/.config/i3/polybar"
-exec --no-startup-id compton --config "/home/nicola/.config/compton.conf"
-exec --no-startup-id dunst -conf "/home/nicola/.config/dunstrc"
+exec --no-startup-id compton --config "/home/nicola/.config/i3/compton"
+exec --no-startup-id dunst -conf "/home/nicola/.config/i3/dunst"
 exec --no-startup-id nm-applet
 #exec --no-startup-id conky main -c "/home/nicola/.config/i3/conky/l"
 #exec_always --no-startup-id killall conky; conky main -c "/home/nicola/.config/i3/conky/r"
