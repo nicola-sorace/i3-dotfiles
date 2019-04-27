@@ -1,0 +1,35 @@
+*{
+	font-family: "Roboto";
+}
+
+stack, header, widget, treeview, paned, toolbar, menubar, *.popup menu, messagedialog, popover, headerbar, list, iconview {
+	background-color: #16263B;
+	background-image: none;
+}
+
+entry, textview text {
+	background-color: #0D1724;
+	color: #268bd2;
+}
+entry * {
+	color: #268bd2;
+}
+
+toolbutton * , toolitem button * {
+	color: #268bd2;
+}
+
+toolitem button:disabled * {
+	color: #0D1724;
+}
+
+button {
+	background-image: image(#16263B);
+}
+
+
+/* App specific */
+
+.termite {
+	padding: 10px;
+}

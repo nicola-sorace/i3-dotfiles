@@ -122,14 +122,18 @@ alpha-step = 0.06;
 # inactive-dim-fixed = true;
 # Blur background of transparent windows. Bad performance with X Render backend. GLX backend is preferred.
 blur-background = true;
+blur-method = "kawase";
+blur-strength = 12;
+
 # Blur background of opaque windows with transparent frames as well.
 # blur-background-frame = true;
 # Do not let blur radius adjust based on window opacity.
 blur-background-fixed = false;
 blur-background-exclude = [
     #"window_type = 'dock'",
-    "window_type = 'desktop'"
-];
+    "window_type = 'desktop'",
+    "name = 'slop'"
+    ];
 
 #################################
 #

@@ -9,10 +9,8 @@
 
 [colors]
 background = #f516263B
-;background-alt = #e016263B
-background-alt = #f5112136
-;background-alt = #f516263B
-;foreground = #f3f4f5
+#background-alt = #f5112136
+background-alt = #f516263B
 foreground = #c2e2e2
 foreground-alt = #f3f4f5
 foreground-dim = #676e7d

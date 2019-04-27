@@ -25,7 +25,8 @@ bindsym $mod+l focus right
 
 # lock
 #bindsym $mod+Shift+x exec i3lock --textcolor=eee8d5ff --ringcolor=07364295 --keyhlcolor=268bd295 --bshlcolor=dc322f95 --insidecolor=002b3695 --insidevercolor=268bd295 --ringvercolor=268bd295 --insidewrongcolor=dc322f95 --ringwrongcolor=dc322f95 --linecolor=07364295 --separatorcolor=07364295
-bindsym $mod+Shift+x exec "/home/nicola/.config/i3/lock/lock.sh"
+#bindsym $mod+Shift+x exec "/home/nicola/.config/i3/lock/lock.sh"
+bindsym $mod+Shift+x exec i3lock
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -201,8 +202,8 @@ bindsym XF86AudioPause exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc previous
 
-bindsym XF86MonBrightnessUp exec light -A 5 && notify-send -r 274448 -u low \"   $('light')% \"
-bindsym XF86MonBrightnessDown exec light -U 5 && notify-send -r 274448 -u low \"   $('light')% \"
+bindsym XF86MonBrightnessUp exec light -A 5 && notify-send -r 274448 -u low \" $('light')%\"
+bindsym XF86MonBrightnessDown exec light -U 5 && notify-send -r 274448 -u low \" $('light')%\"
 
 #bindsym $mod+c exec chromium
 #bindsym $mod+i exec chromium --incognito
@@ -215,8 +216,8 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec rofi -show run  -padding 300 -fullscreen -font "Roboto Light 50" -separator-style "none"
-bindsym $mod+Shift+d exec rofi -show drun -sidebar-mode  -padding 200 -fullscreen -show-icons -font "Roboto Light 50" -separator-style "none"
+bindsym $mod+Shift+d exec rofi -show run -padding 300
+bindsym $mod+d exec rofi -show drun -sidebar-mode  -padding 200 -show-icons
 
 bindsym Control+Mod1+Down exec xrandr --output eDP --rotate normal
 bindsym Control+Mod1+Up exec xrandr --output eDP --rotate inverted
@@ -225,14 +226,20 @@ bindsym Control+Mod1+Right exec xrandr --output eDP --rotate left
 
 #bindsym $mod+XF86MonBrightnessDown exec "killall conky; conky main -c \\"/home/nicola/.config/i3/conky/r\\"; conky main -c \\"/home/nicola/.config/i3/conky/l\\" "
 #bindsym $mod+XF86MonBrightnessUp exec "killall conky; conky main -c \\"/home/nicola/.config/i3/conky/rf\\"; conky main -c \\"/home/nicola/.config/i3/conky/lf\\" "
-bindsym $mod+XF86MonBrightnessUp exec conky main -c \\"/home/nicola/.config/i3/conky/lf\\" "
+#bindsym $mod+XF86MonBrightnessUp exec conky main -c \\"/home/nicola/.config/i3/conky/lf\\" "
+
+bindsym Print exec maim -s | xclip -selection c -t image/png
+bindsym $mod+c exec "/home/nicola/.config/i3/play_pause_pid.sh"
 
 # startup
 exec_always --no-startup-id feh --bg-fill "/home/nicola/Documents/wallpapers/penguin.png"
 exec_always --no-startup-id killall polybar; polybar main -c "/home/nicola/.config/i3/polybar"
 exec --no-startup-id compton --config "/home/nicola/.config/i3/compton"
 exec --no-startup-id dunst -conf "/home/nicola/.config/i3/dunst"
+
 exec --no-startup-id nm-applet
 #exec --no-startup-id conky main -c "/home/nicola/.config/i3/conky/l"
 #exec_always --no-startup-id killall conky; conky main -c "/home/nicola/.config/i3/conky/r"
-exec --no-startup-id mopidy
+#exec --no-startup-id mopidy
+exec --no-startup-id dropbox
+#exec --no-startup-id kdeconnect-indicator
