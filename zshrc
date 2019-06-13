@@ -106,5 +106,6 @@ alias l='ls -lah'
 alias g='grep -i'
 alias clone='termite -d $(pwd) & disown'
 alias clearhist='cat /dev/null > /home/nicola/.zsh_history'
+alias fplay='feh -S name --version-sort *'
 
-alias ss='sudo shutdown -h 0'
+alias shu='sudo shutdown -h 0'

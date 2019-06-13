@@ -17,7 +17,7 @@ alias g='grep -i'
 alias clone='termite -d $(pwd) & disown'
 alias clearhist='cat /dev/null > /home/nicola/.bash_history'
 
-alias ss='sudo shutdown -h 0'
+alias shu='sudo shutdown -h 0'
 
 
 ### Prompt start ###
