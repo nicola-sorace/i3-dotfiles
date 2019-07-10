@@ -27,10 +27,11 @@ call vundle#begin()
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
-
+Plugin 'tpope/vim-surround'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,7 +40,19 @@ filetype plugin indent on
 
 set number
 set relativenumber
+" set list
 set mouse=a
 set clipboard=unnamedplus
 set tabstop=4
 set shiftwidth=4
+
+set foldmethod=syntax
+set foldlevelstart=10
+
+highlight MatchParen ctermfg=white ctermbg=yellow cterm=NONE
+highlight SpecialKey ctermfg=black
+
+nmap <Tab> :bnext<CR>
+nmap <S-Tab> :bprevious<CR>
+nmap <S-X> :bdelete<CR>
+nmap <Space> za<CR>

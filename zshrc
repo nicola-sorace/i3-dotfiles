@@ -109,3 +109,9 @@ alias clearhist='cat /dev/null > /home/nicola/.zsh_history'
 alias fplay='feh -S name --version-sort *'
 
 alias shu='sudo shutdown -h 0'
+
+# KDE Plasma blur background:
+if [[ $(ps --no-header -p $PPID -o comm) =~ '^termite|konsole$' ]]; then
+        for wid in $(xdotool search --pid $PPID); do
+            xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
+fi
