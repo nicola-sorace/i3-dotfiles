@@ -230,6 +230,7 @@ bindsym Control+Mod1+Right exec xrandr --output eDP --rotate left
 
 bindsym Print exec maim -s | xclip -selection c -t image/png
 bindsym $mod+c exec "/home/nicola/.config/i3/play_pause_pid.sh"
+bindsym $mod+g exec "dm-tool switch-to-greeter"
 
 # startup
 exec_always --no-startup-id feh --bg-fill "/home/nicola/Documents/wallpapers/penguin.png"
