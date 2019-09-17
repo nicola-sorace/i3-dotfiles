@@ -19,6 +19,8 @@ alias clearhist='cat /dev/null > /home/nicola/.bash_history'
 
 alias shu='sudo shutdown -h 0'
 
+#set -o vi
+
 
 ### Prompt start ###
 ## http://ezprompt.net/

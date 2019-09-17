@@ -110,6 +110,8 @@ alias fplay='feh -S name --version-sort *'
 
 alias shu='sudo shutdown -h 0'
 
+bindkey -v
+
 # KDE Plasma blur background:
 if [[ $(ps --no-header -p $PPID -o comm) =~ '^termite|konsole$' ]]; then
         for wid in $(xdotool search --pid $PPID); do
