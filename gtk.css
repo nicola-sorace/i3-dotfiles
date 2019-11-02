@@ -26,6 +26,12 @@ toolitem button:disabled * {
 button {
 	background-image: image(#16263B);
 }
+button:hover{
+	background-image: image(#22344D);
+}
+button:active, treeview treeview:selected{
+	background-image: image(#334866);
+}
 
 
 /* App specific */
