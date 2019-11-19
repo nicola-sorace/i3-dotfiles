@@ -1,0 +1,89 @@
+* {
+	border: none;
+	font-family: Roboto;
+	font-size: 18px;
+	color: #c2e2e2;
+	transition: 0.2s;
+
+	text-shadow: none;
+	box-shadow: none;
+}
+window#waybar {
+	background: rgba(22,38,59, 1.0);
+}
+
+#workspaces {
+	background: transparent;
+}
+#workspaces button {
+	background: rgba(34,52,77, 0.0);
+	border-radius: 0px;
+	border-top: 0px;
+	border-bottom: solid rgba(38,139,210, 0.0) 0px;
+	padding-top: 0px;
+}
+#workspaces button:hover {
+	background: rgba(34,52,77, 0.5);
+	border-bottom: solid rgba(38,139,210, 0.20) 4px;
+	padding-top: 4px;
+}
+#workspaces button.focused {
+	border-bottom: solid rgba(38,139,210, 1.0) 2px;
+	padding-top: 2px;
+}
+#workspaces button.focused:hover {
+	background: rgba(34,52,77, 0.0);
+	border-bottom: solid rgba(38,139,210, 0.75) 2px;
+}
+#workspaces button.persistent * {
+	color: #676e7d;
+}
+
+#window {
+	margin-left: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#window, #mpd {
+	color: #9101FF;
+	border-bottom: solid rgba(145,1,255, 0.95) 2px;
+}
+#mpd.stopped {
+	border-bottom: solid rgba(145,1,255, 0.95) 0px;
+}
+
+widget > label{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+widget:hover > label {
+	background-color:red;
+}
+#tray{
+	margin-left: 10px;
+	margin-right: 20px;
+}
+#clock {
+	color: #01FFAB;
+}
+#battery {
+	color: #00E5E0;
+}
+#memory, #cpu, #temperature {
+	font-size: 0px;
+	padding: 0px;
+}
+#network {
+	color: #0196FF;
+}
+#pulseaudio {
+	color: #7F57FF;
+}
+
+#memory.warning, #temperature.warning, #cpu.warning {
+	background-color: rgba(183,34,64, 1.0);
+	color: #FFF;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+}

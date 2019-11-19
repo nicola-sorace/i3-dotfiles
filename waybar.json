@@ -1,0 +1,76 @@
+{
+	"layer": "top",
+	"position": "bottom",
+	"height": 40,
+	"modules-left": ["sway/workspaces","sway/window","sway/mode"],
+	"modules-right": ["mpd","pulseaudio","network","memory","cpu","temperature","battery","clock","tray"],
+
+	"clock": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {:%a  %Y.%m.%d  %H:%M:%S}",
+		"format-alt": "{:%a  %Y.%m.%d  %I:%M%p}"
+	},
+
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"format-charging": "⦿ {capacity}",
+		"format-icons": ["○", "◔", "◑", "◕", "●"]
+	},
+
+	"memory": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {}",
+		"states": {
+			"critical": 60
+		}
+	},
+
+	"cpu": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {}",
+		"states": {
+			"critical": 60
+		}
+	},
+
+	"temperature": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {}°C",
+		"critical-threshold": 60
+	},
+
+	"network": {
+		"format-wifi": "<span font='Material Icons' rise='-2560'></span> {essid}"
+	},
+
+	"pulseaudio": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {volume}%",
+		"on-click": "pavucontrol"
+	},
+
+	"mpd": {
+		"format-stopped": "<span font='Material Icons' rise='-2560'></span>",
+		"format": "{stateIcon} {title}",
+		"state-icons": {
+			"paused": "<span font='Material Icons' rise='-2560'></span>",
+			"playing": "<span font='Material Icons' rise='-2560'></span>"
+		},
+		"on-click": "termite --name 'i3_float' -e ncmpcpp"
+	},
+
+	"sway/workspaces": {
+		"persistent_workspaces": {
+			"1": []
+		},
+		"format": "{name}",
+		"format-icons": {
+			"1":"<span font='22' rise='20480'></span>",
+			"2":"2",
+			"3":"3",
+			"4":"4",
+			"5":"5",
+			"6":"6",
+			"7":"7",
+			"8":"8",
+			"9":"9",
+			"10":"0"
+		}
+	}
+
+}
