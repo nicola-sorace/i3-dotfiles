@@ -39,6 +39,12 @@ window#waybar {
 	color: #676e7d;
 }
 
+#workspaces button:first-child, #workspaces button:first-child:hover {
+	background-image: url("/home/nicola/.config/i3/logo.svg");
+	background-size: cover;
+	transition: background-image 0.0s;
+}
+
 #window {
 	margin-left: 2px;
 	padding-left: 6px;
@@ -55,9 +61,6 @@ window#waybar {
 widget > label{
 	padding-left: 10px;
 	padding-right: 10px;
-}
-widget:hover > label {
-	background-color:red;
 }
 #tray{
 	margin-left: 10px;
@@ -80,7 +83,7 @@ widget:hover > label {
 	color: #7F57FF;
 }
 
-#memory.warning, #temperature.warning, #cpu.warning {
+#memory.critical, #cpu.critical, #temperature.critical, #battery.critical {
 	background-color: rgba(183,34,64, 1.0);
 	color: #FFF;
 	font-size: 18px;
