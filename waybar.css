@@ -9,7 +9,11 @@
 	box-shadow: none;
 }
 window#waybar {
-	background: rgba(22,38,59, 1.0);
+	background: rgba(0,0,0, 1.0);
+}
+
+widget {
+	background: rgba(0,0,0, 0.0);
 }
 
 #workspaces {
