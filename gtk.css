@@ -1,5 +1,6 @@
 *{
 	font-family: "Roboto";
+	border: none;
 }
 
 stack, header, widget, treeview, paned, toolbar, menubar, *.popup menu, messagedialog, popover, headerbar, list, iconview {

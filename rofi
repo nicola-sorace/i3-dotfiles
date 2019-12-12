@@ -4,7 +4,7 @@ rofi.padding:		200
 rofi.separator-style:	none
 
 !			bg	   border     separator
-rofi.color-window:	#cc16263B, #cc16263B, #cc16263B 
+rofi.color-window:	#cc000000, #cc000000, #cc000000
 
 !			bg	   fg	    bgalt      hlbg	  hlfg
 rofi.color-normal:	#0016263B, #c2e2e2, #0016263B, #0016263B, #9101FF 
