@@ -10,7 +10,7 @@ hide_edge_borders both
 
 #new_window pixel 0
 default_border none
-gaps inner 20
+gaps inner 0
 smart_gaps on
 
 # drag windows
