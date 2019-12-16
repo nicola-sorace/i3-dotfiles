@@ -38,8 +38,7 @@ filetype plugin indent on
 """ Vundle settings end
 
 
-set number
-set relativenumber
+set number relativenumber
 " set list
 set mouse=a
 set clipboard=unnamedplus
@@ -48,6 +47,7 @@ set shiftwidth=4
 
 set foldmethod=syntax
 set foldlevelstart=10
+set splitbelow splitright
 
 highlight MatchParen ctermfg=white ctermbg=yellow cterm=NONE
 highlight SpecialKey ctermfg=black

@@ -6,13 +6,14 @@
 stack, header, widget, treeview, paned, toolbar, menubar, *.popup menu, messagedialog, popover, headerbar, list, iconview {
 	background-color: #000;
 	background-image: none;
+	color: #c2e2e2;
 }
 
 entry, textview text {
 	background-color: #000;
 	color: #268bd2;
 }
-entry * {
+entry *, textview text * {
 	color: #268bd2;
 }
 

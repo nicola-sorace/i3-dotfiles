@@ -3,7 +3,8 @@
 	"position": "bottom",
 	"height": 40,
 	"modules-left": ["sway/workspaces","sway/window","sway/mode"],
-	"modules-right": ["mpd","pulseaudio","network","memory","cpu","temperature","battery","clock","tray"],
+	"modules-center": ["custom/mail", "mpd"],
+	"modules-right": ["pulseaudio","network","memory","cpu","temperature","battery","clock","tray"],
 
 	"tray": {
 		"icon-size": 20
@@ -66,7 +67,15 @@
 			"paused": "<span font='Material Icons' rise='-2560'></span>",
 			"playing": "<span font='Material Icons' rise='-2560'></span>"
 		},
-		"on-click": "termite --name 'i3_float' -e ncmpcpp"
+		"on-click": "termite -e ncmpcpp"
+	},
+
+	"custom/mail": {
+		"exec": "/home/nicola/.config/i3/mail_module.sh",
+		"interval": 10,
+		"format": "<span font='Material Icons' rise='-2560'></span> {}",
+		"return-type": "json",
+		"on-click": "termite -e neomutt"
 	},
 
 	"sway/workspaces": {

@@ -78,6 +78,7 @@ export LANG=en_GB.UTF-8
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 export EDITOR='vim'
+export TERMINAL='termite'
 # else
 #   export EDITOR='mvim'
 # fi

@@ -202,6 +202,7 @@ exec --no-startup-id dropbox
 
 input * {
 	natural_scroll enabled
+	dwt disabled
 	xkb_options altwin:swap_lalt_lwin
 }
 

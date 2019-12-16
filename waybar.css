@@ -54,11 +54,20 @@ widget {
 	padding-left: 6px;
 	padding-right: 6px;
 }
-#window, #mpd {
+#window{
 	color: #9101FF;
 	border-bottom: solid rgba(145,1,255, 0.95) 2px;
 }
-#mpd.stopped {
+#mpd, #custom-mail{
+	color: rgba(0,0,0, 1.0);
+	background-color: rgba(145,1,255, 1.0);
+	border-radius: 6px;
+	margin: 6px;
+	margin-right: 0px;
+}
+#mpd.stopped, #custom-mail.old {
+	color: rgba(145,1,255, 0.5);
+	background-color: rgba(145,1,255, 0.0);
 	border-bottom: solid rgba(145,1,255, 0.95) 0px;
 }
 
