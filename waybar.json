@@ -4,7 +4,7 @@
 	"height": 40,
 	"modules-left": ["sway/workspaces","sway/window","sway/mode"],
 	"modules-center": ["custom/mail", "mpd"],
-	"modules-right": ["pulseaudio","network","memory","cpu","temperature","battery","clock","tray"],
+	"modules-right": ["memory","cpu","temperature", "pulseaudio","network","battery","clock","tray"],
 
 	"tray": {
 		"icon-size": 20
@@ -41,7 +41,7 @@
 
 	"temperature": {
 		"format": "<span font='Material Icons' rise='-2560'></span> {}°C",
-		"critical-threshold": 60
+		"critical-threshold": 70
 	},
 
 	"network": {

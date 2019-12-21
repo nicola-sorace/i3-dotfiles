@@ -19,7 +19,9 @@ alias clearhist='cat /dev/null > /home/nicola/.bash_history'
 
 alias shu='sudo shutdown -h 0'
 
-#set -o vi
+set -o vi
+export EDITOR='vim'
+export TERMINAL='termite'
 
 
 ### Prompt start ###

@@ -63,7 +63,8 @@ widget {
 	background-color: rgba(145,1,255, 1.0);
 	border-radius: 6px;
 	margin: 6px;
-	margin-right: 0px;
+	margin-right: 3px;
+	margin-left: 3px;
 }
 #mpd.stopped, #custom-mail.old {
 	color: rgba(145,1,255, 0.5);
@@ -98,8 +99,13 @@ widget > label{
 
 #memory.critical, #cpu.critical, #temperature.critical, #battery.critical {
 	background-color: rgba(183,34,64, 1.0);
-	color: #FFF;
+	color: #000;
 	font-size: 18px;
 	padding-left: 10px;
 	padding-right: 10px;
+
+	border-radius: 6px;
+	margin: 6px;
+	margin-right: 3px;
+	margin-left: 3px;
 }

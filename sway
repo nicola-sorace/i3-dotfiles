@@ -172,8 +172,8 @@ bindsym XF86MonBrightnessDown exec light -U 5 && notify-send -r 274448 -u low \"
 
 bindsym $mod+Shift+x exec swaylock -c 0D1724
 
-bindsym $mod+i exec MOZ_ENABLE_WAYLAND=1 firefox-developer-edition
-bindsym $mod+p exec MOZ_ENABLE_WAYLAND=1 firefox-developer-edition --private-window
+bindsym $mod+i exec firefox-developer-edition
+bindsym $mod+p exec firefox-developer-edition --private-window
 bindsym $mod+n exec thunar
 
 bindsym $mod+Return exec termite
@@ -182,6 +182,7 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+Shift+d exec rofi -show run -padding 300
 bindsym $mod+d exec rofi -show drun -sidebar-mode  -padding 200 -show-icons
+bindsym $mod+c exec passmenu --type
 
 bindsym Print exec grim -g "$(slurp -b 0D1724aa -c 268bd2 -d)" - | wl-copy
 
@@ -196,7 +197,8 @@ exec_always --no-startup-id killall waybar
 exec_always --no-startup-id waybar
 
 exec --no-startup-id mako
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
+exec --no-startup-id nm-tray
 exec --no-startup-id dropbox
 #exec --no-startup-id kdeconnect-indicator
 
