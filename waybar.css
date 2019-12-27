@@ -44,7 +44,7 @@ widget {
 }
 
 #workspaces button:first-child, #workspaces button:first-child:hover {
-	background-image: url("/home/nicola/.config/i3/logo.svg");
+	background-image: url("/home/nicola/dotfiles/logo.svg");
 	background-size: cover;
 	transition: background-image 0.0s;
 }

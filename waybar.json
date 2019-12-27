@@ -71,7 +71,7 @@
 	},
 
 	"custom/mail": {
-		"exec": "/home/nicola/.config/i3/mail_module.sh",
+		"exec": "/home/nicola/dotfiles/mail_module.sh",
 		"interval": 10,
 		"format": "<span font='Material Icons' rise='-2560'></span> {}",
 		"return-type": "json",
