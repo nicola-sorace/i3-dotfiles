@@ -3,7 +3,7 @@
 	"position": "bottom",
 	"height": 40,
 	"modules-left": ["sway/workspaces","sway/window","sway/mode"],
-	"modules-center": ["custom/mail", "mpd"],
+	"modules-center": ["custom/mail", "mpd", "custom/touchbar"],
 	"modules-right": ["memory","cpu","temperature", "pulseaudio","network","battery","clock","tray"],
 
 	"tray": {
@@ -68,6 +68,11 @@
 			"playing": "<span font='Material Icons' rise='-2560'></span>"
 		},
 		"on-click": "termite -e ncmpcpp"
+	},
+
+	"custom/touchbar": {
+		"format": "<span font='Material Icons' rise='-2560'></span> {}",
+		"on-click": "toggle waybar -c /home/nicola/dotfiles/touch_waybar.json"
 	},
 
 	"custom/mail": {
