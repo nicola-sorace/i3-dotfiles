@@ -186,7 +186,7 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+Shift+d exec rofi -show run -padding 300
 bindsym $mod+d exec rofi -show drun -sidebar-mode -padding 200 -show-icons
-bindsym $mod+c exec passmenu --type
+bindsym $mod+c exec passmenu --type -l 6 -nb "#000" -sb "#0196FF" -sf "#000" -fn "Roboto"
 
 bindsym Print exec grim -g "$(slurp -b 0D1724aa -c 268bd2 -d)" - | wl-copy
 
